@@ -12,7 +12,7 @@ jobs:
           python-version: '3.9'
           
       - name: Install dependencies
-        run: pip install pandas pyinstaller
+        run: pip install pandas pyinstaller openpyxl
         
       - name: Build EXE
         run: pyinstaller --onefile main.py
